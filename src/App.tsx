@@ -37,6 +37,8 @@ import Level25 from "./pages/levels/Level25";
 import Level26 from "./pages/levels/Level26";
 import Level27 from "./pages/levels/Level27";
 import Level28 from "./pages/levels/Level28";
+import Level29 from "./pages/levels/Level29";
+import Level30 from "./pages/levels/Level30";
 import NotFound from "./pages/NotFound";
 import SQLiStrikeback from "./pages/challenges/SQLiStrikeback";
 import NetworkMapper from "./pages/challenges/NetworkMapper";
@@ -88,6 +90,8 @@ const App = () => (
           <Route path="/level/26" element={<Level26 />} />
           <Route path="/level/27" element={<Level27 />} />
           <Route path="/level/28" element={<Level28 />} />
+          <Route path="/level/29" element={<Level29 />} />
+          <Route path="/level/30" element={<Level30 />} />
           <Route path="/challenge/sqli-strikeback" element={<SQLiStrikeback />} />
           <Route path="/challenge/network-mapper" element={<NetworkMapper />} />
           <Route path="/challenge/phish-chips" element={<PhishChips />} />
