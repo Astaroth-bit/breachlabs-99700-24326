@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Breach Labs Cyberpunk Design System */
+
+@layer base {
+  :root {
+    /* Core Cyberpunk Color Palette */
+    --background: 220 13% 5%;
+    --foreground: 0 0% 95%;
+    
+    /* Brand Gradient Colors */
+    --cyber-cyan: 185 100% 50%;
+    --cyber-purple: 271 81% 56%;
+    --cyber-magenta: 330 81% 60%;
+    
+    /* UI Components */
+    --card: 220 13% 7%;
+    --card-foreground: 0 0% 95%;
+    --card-glow: 220 13% 15%;
+    
+    --popover: 220 13% 7%;
+    --popover-foreground: 0 0% 95%;
+    
+    --primary: 185 100% 50%;
+    --primary-foreground: 220 13% 5%;
+    --primary-glow: 185 100% 50%;
+    
+    --secondary: 271 81% 56%;
+    --secondary-foreground: 0 0% 95%;
+    --secondary-glow: 271 81% 56%;
+    
+    --accent: 330 81% 60%;
+    --accent-foreground: 0 0% 95%;
+    --accent-glow: 330 81% 60%;
+    
+    --muted: 220 13% 15%;
+    --muted-foreground: 0 0% 60%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 220 13% 20%;
+    --input: 220 13% 15%;
+    --ring: 185 100% 50%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom Cyber Effects */
+    --cyber-grid: linear-gradient(90deg, transparent 98%, hsl(185 100% 50% / 0.1) 100%),
+                  linear-gradient(180deg, transparent 98%, hsl(185 100% 50% / 0.1) 100%);
+    --cyber-gradient: linear-gradient(135deg, hsl(185 100% 50%) 0%, hsl(271 81% 56%) 50%, hsl(330 81% 60%) 100%);
+    --neon-glow: 0 0 20px hsl(var(--primary-glow) / 0.5), 0 0 40px hsl(var(--primary-glow) / 0.3);
+    --neon-glow-secondary: 0 0 20px hsl(var(--secondary-glow) / 0.5), 0 0 40px hsl(var(--secondary-glow) / 0.3);
+    --glass-bg: rgba(23, 23, 23, 0.5);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    
+    /* Blacksite VIP Theme Colors */
+    --blacksite-bg: 16 16 16;
+    --blacksite-purple: 250 71% 66%;
+    --blacksite-purple-glow: 250 71% 76%;
+    --blacksite-grid: linear-gradient(90deg, transparent 97%, hsl(250 71% 66% / 0.08) 100%),
+                      linear-gradient(180deg, transparent 97%, hsl(250 71% 66% / 0.08) 100%);
+    --royal-glow: 0 0 30px hsl(250 71% 66% / 0.4), 0 0 60px hsl(250 71% 66% / 0.2);
+    --brushed-metal: rgba(139, 92, 246, 0.15);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background-image: var(--cyber-grid);
+    background-size: 50px 50px;
+  }
+  
+  /* Cyber Grid Animation */
+  @keyframes gridPulse {
+    0%, 100% { opacity: 0.1; }
+    50% { opacity: 0.3; }
+  }
+  
+  /* Neon Glow Effects */
+  .neon-glow {
+    box-shadow: var(--neon-glow);
+  }
+  
+  .neon-glow-secondary {
+    box-shadow: var(--neon-glow-secondary);
+  }
+  
+  /* Glassmorphism */
+  .glass {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Cyber text gradient */
+  .cyber-gradient {
+    background: var(--cyber-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Hover lift effect */
+  .hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Terminal styling */
+  .terminal {
+    font-family: 'Courier New', monospace;
+    background: hsl(220 13% 3%);
+    border: 1px solid hsl(185 100% 50% / 0.3);
+    color: hsl(120 100% 80%);
+  }
+  
+  /* Pulse animation for interactive elements */
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
