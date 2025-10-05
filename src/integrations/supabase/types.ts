@@ -14,7 +14,86 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      augmentations: {
+        Row: {
+          augmentation_id: string
+          branch: Database["public"]["Enums"]["augmentation_branch"]
+          id: string
+          tier: number
+          unlocked_at: string
+          user_id: string
+        }
+        Insert: {
+          augmentation_id: string
+          branch: Database["public"]["Enums"]["augmentation_branch"]
+          id?: string
+          tier: number
+          unlocked_at?: string
+          user_id: string
+        }
+        Update: {
+          augmentation_id?: string
+          branch?: Database["public"]["Enums"]["augmentation_branch"]
+          id?: string
+          tier?: number
+          unlocked_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "augmentations_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      profiles: {
+        Row: {
+          augmentation_points: number
+          created_at: string
+          current_xp: number
+          data_fragments: number
+          exploit_shards: number
+          gridcoin: number
+          id: string
+          level: number
+          prestige_level: number
+          signature_keys: number
+          total_xp: number
+          updated_at: string
+        }
+        Insert: {
+          augmentation_points?: number
+          created_at?: string
+          current_xp?: number
+          data_fragments?: number
+          exploit_shards?: number
+          gridcoin?: number
+          id: string
+          level?: number
+          prestige_level?: number
+          signature_keys?: number
+          total_xp?: number
+          updated_at?: string
+        }
+        Update: {
+          augmentation_points?: number
+          created_at?: string
+          current_xp?: number
+          data_fragments?: number
+          exploit_shards?: number
+          gridcoin?: number
+          id?: string
+          level?: number
+          prestige_level?: number
+          signature_keys?: number
+          total_xp?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
@@ -23,7 +102,15 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      augmentation_branch: "architect" | "ghost" | "sentinel" | "gridrunner"
+      augmentation_path:
+        | "none"
+        | "exploit_dev"
+        | "malware_analyst"
+        | "network_infiltrator"
+        | "covert_ops"
+        | "threat_hunter"
+        | "incident_responder"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +237,17 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      augmentation_branch: ["architect", "ghost", "sentinel", "gridrunner"],
+      augmentation_path: [
+        "none",
+        "exploit_dev",
+        "malware_analyst",
+        "network_infiltrator",
+        "covert_ops",
+        "threat_hunter",
+        "incident_responder",
+      ],
+    },
   },
 } as const

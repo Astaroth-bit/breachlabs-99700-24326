@@ -46,6 +46,9 @@ import PhishChips from "./pages/challenges/PhishChips";
 import FirewallFirstResponse from "./pages/challenges/FirewallFirstResponse";
 import PasswordPolicy from "./pages/challenges/PasswordPolicy";
 import SignatureScramble from "./pages/challenges/SignatureScramble";
+import { AugmentationBayWrapper } from "./pages/AugmentationBayWrapper";
+import { AppWrapper } from "./components/AppWrapper";
+import { XPDemo } from "./pages/XPDemo";
 
 const queryClient = new QueryClient();
 
@@ -55,7 +58,8 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
+        <AppWrapper>
+          <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/intermediate-track" element={<IntermediateTrack />} />
           <Route path="/blacksite-missions" element={<BlacksiteMissions />} />
@@ -98,9 +102,12 @@ const App = () => (
           <Route path="/challenge/firewall-first-response" element={<FirewallFirstResponse />} />
           <Route path="/challenge/password-policy" element={<PasswordPolicy />} />
           <Route path="/challenge/signature-scramble" element={<SignatureScramble />} />
+          <Route path="/augmentation-bay" element={<AugmentationBayWrapper />} />
+          <Route path="/xp-demo" element={<XPDemo />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </AppWrapper>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
