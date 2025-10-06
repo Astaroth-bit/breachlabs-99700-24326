@@ -8,7 +8,7 @@ import { LevelUpModal } from './LevelUpModal';
 export const AppWrapper = ({ children }: { children: React.ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);
   const [showLevelUp, setShowLevelUp] = useState(false);
-  const [levelUpData, setLevelUpData] = useState({ oldLevel: 0, newLevel: 0, ap: 0 });
+  const [levelUpData, setLevelUpData] = useState({ oldLevel: 0, newLevel: 0, ap: 0, archetype: '' });
   const { profile } = useProfile(user);
 
   useEffect(() => {
@@ -44,6 +44,7 @@ export const AppWrapper = ({ children }: { children: React.ReactNode }) => {
               oldLevel: profile.level,
               newLevel: newProfile.level,
               ap: newProfile.level - profile.level,
+              archetype: newProfile.archetype,
             });
             setShowLevelUp(true);
           }
@@ -66,6 +67,7 @@ export const AppWrapper = ({ children }: { children: React.ReactNode }) => {
         oldLevel={levelUpData.oldLevel}
         newLevel={levelUpData.newLevel}
         augmentationPoints={levelUpData.ap}
+        archetype={levelUpData.archetype}
       />
     </>
   );

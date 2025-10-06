@@ -51,46 +51,76 @@ export type Database = {
       }
       profiles: {
         Row: {
+          archetype: string | null
           augmentation_points: number
           created_at: string
           current_xp: number
           data_fragments: number
           exploit_shards: number
           gridcoin: number
+          has_completed_onboarding: boolean | null
           id: string
           level: number
           prestige_level: number
+          profession: string | null
           signature_keys: number
           total_xp: number
           updated_at: string
         }
         Insert: {
+          archetype?: string | null
           augmentation_points?: number
           created_at?: string
           current_xp?: number
           data_fragments?: number
           exploit_shards?: number
           gridcoin?: number
+          has_completed_onboarding?: boolean | null
           id: string
           level?: number
           prestige_level?: number
+          profession?: string | null
           signature_keys?: number
           total_xp?: number
           updated_at?: string
         }
         Update: {
+          archetype?: string | null
           augmentation_points?: number
           created_at?: string
           current_xp?: number
           data_fragments?: number
           exploit_shards?: number
           gridcoin?: number
+          has_completed_onboarding?: boolean | null
           id?: string
           level?: number
           prestige_level?: number
+          profession?: string | null
           signature_keys?: number
           total_xp?: number
           updated_at?: string
+        }
+        Relationships: []
+      }
+      user_roles: {
+        Row: {
+          created_at: string | null
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string | null
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
         }
         Relationships: []
       }
@@ -99,9 +129,16 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
+      app_role: "admin" | "moderator" | "user"
       augmentation_branch: "architect" | "ghost" | "sentinel" | "gridrunner"
       augmentation_path:
         | "none"
@@ -238,6 +275,7 @@ export type CompositeTypes<
 export const Constants = {
   public: {
     Enums: {
+      app_role: ["admin", "moderator", "user"],
       augmentation_branch: ["architect", "ghost", "sentinel", "gridrunner"],
       augmentation_path: [
         "none",

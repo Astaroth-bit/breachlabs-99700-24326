@@ -10,11 +10,36 @@ interface LevelUpModalProps {
   oldLevel: number;
   newLevel: number;
   augmentationPoints: number;
+  archetype?: string;
 }
 
-export const LevelUpModal = ({ open, onClose, oldLevel, newLevel, augmentationPoints }: LevelUpModalProps) => {
-  const [showContent, setShowContent] = useState(false);
+export const LevelUpModal = ({ open, onClose, oldLevel, newLevel, augmentationPoints, archetype }: LevelUpModalProps) => {
   const navigate = useNavigate();
+  const [showContent, setShowContent] = useState(false);
+  
+  const isMilestone = newLevel % 5 === 0;
+  
+  const getMilestoneRewards = () => {
+    if (!isMilestone) return null;
+    
+    const rewards: any = {
+      data_fragments: 1,
+      signature_keys: 1,
+    };
+    
+    // Add archetype-specific bonus
+    if (archetype === 'netrunner') {
+      rewards.data_fragments = 3;
+    } else if (archetype === 'ghost') {
+      rewards.exploit_shards = 3;
+    } else if (archetype === 'architect') {
+      rewards.signature_keys = 3;
+    }
+    
+    return rewards;
+  };
+  
+  const milestoneRewards = getMilestoneRewards();
 
   useEffect(() => {
     if (open) {
@@ -74,7 +99,15 @@ export const LevelUpModal = ({ open, onClose, oldLevel, newLevel, augmentationPo
             </div>
 
             {/* Rewards section */}
-            <div className="space-y-6 mb-8">
+            <div className="space-y-4 mb-8">
+              {isMilestone && (
+                <div className="text-center mb-4">
+                  <div className="inline-block px-4 py-2 rounded-lg bg-gradient-to-r from-yellow-500/20 to-purple-500/20 border border-yellow-500/40 animate-pulse">
+                    <span className="text-xl font-bold cyber-gradient">⭐ MILESTONE REACHED ⭐</span>
+                  </div>
+                </div>
+              )}
+
               <div className="flex items-center justify-center gap-4 p-6 bg-gradient-to-r from-purple-900/50 to-pink-900/50 rounded-lg border border-purple-500/30">
                 <Zap className="w-8 h-8 text-purple-400" />
                 <div className="text-left">
@@ -83,13 +116,35 @@ export const LevelUpModal = ({ open, onClose, oldLevel, newLevel, augmentationPo
                 </div>
               </div>
 
-              {newLevel % 5 === 0 && (
-                <div className="flex items-center justify-center gap-4 p-6 bg-gradient-to-r from-cyan-900/50 to-blue-900/50 rounded-lg border border-cyan-500/30 animate-fade-in">
-                  <Sparkles className="w-8 h-8 text-cyan-400" />
-                  <div className="text-left">
-                    <div className="text-sm text-white/60">Milestone Reward</div>
-                    <div className="text-2xl font-bold text-cyan-400">+500 GridCoin</div>
-                  </div>
+              {isMilestone && milestoneRewards && (
+                <div className="space-y-3">
+                  {milestoneRewards.data_fragments > 0 && (
+                    <div className="flex items-center justify-center gap-4 p-4 bg-gradient-to-r from-blue-900/50 to-cyan-900/50 rounded-lg border border-blue-500/30 animate-fade-in">
+                      <span className="text-3xl">📊</span>
+                      <div className="text-left">
+                        <div className="text-sm text-white/60">Data Fragments</div>
+                        <div className="text-2xl font-bold text-blue-400">+{milestoneRewards.data_fragments}</div>
+                      </div>
+                    </div>
+                  )}
+                  {milestoneRewards.exploit_shards > 0 && (
+                    <div className="flex items-center justify-center gap-4 p-4 bg-gradient-to-r from-red-900/50 to-pink-900/50 rounded-lg border border-red-500/30 animate-fade-in">
+                      <span className="text-3xl">⚔️</span>
+                      <div className="text-left">
+                        <div className="text-sm text-white/60">Exploit Shards</div>
+                        <div className="text-2xl font-bold text-red-400">+{milestoneRewards.exploit_shards}</div>
+                      </div>
+                    </div>
+                  )}
+                  {milestoneRewards.signature_keys > 0 && (
+                    <div className="flex items-center justify-center gap-4 p-4 bg-gradient-to-r from-cyan-900/50 to-blue-900/50 rounded-lg border border-cyan-500/30 animate-fade-in">
+                      <span className="text-3xl">🔑</span>
+                      <div className="text-left">
+                        <div className="text-sm text-white/60">Signature Keys</div>
+                        <div className="text-2xl font-bold text-cyan-400">+{milestoneRewards.signature_keys}</div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
             </div>

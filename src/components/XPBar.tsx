@@ -11,11 +11,16 @@ export const XPBar = ({ profile }: XPBarProps) => {
   const [animatedXP, setAnimatedXP] = useState(0);
   const [showGain, setShowGain] = useState(false);
   const [gainAmount, setGainAmount] = useState(0);
+  const [canLevelUp, setCanLevelUp] = useState(false);
 
   useEffect(() => {
     if (profile) {
       const prevXP = animatedXP;
       const newXP = profile.current_xp;
+      const xpNeeded = getXPForLevel(profile.level + 1);
+      
+      // Check if can level up
+      setCanLevelUp(newXP >= xpNeeded);
       
       if (newXP > prevXP) {
         setGainAmount(newXP - prevXP);
@@ -53,19 +58,20 @@ export const XPBar = ({ profile }: XPBarProps) => {
   const percentage = Math.min((animatedXP / xpNeeded) * 100, 100);
 
   return (
-    <div className="fixed top-4 left-4 z-50 flex items-center gap-3 animate-fade-in">
-      {/* Level Hexagon */}
-      <div className="relative">
-        <Hexagon 
-          className="w-16 h-16 text-yellow-500 fill-yellow-500/20 animate-pulse" 
-          style={{ animationDuration: '3s' }}
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-xl font-bold text-yellow-500 drop-shadow-[0_0_8px_rgba(234,179,8,0.5)]">
-            {profile.level}
-          </span>
+    <div className="fixed top-20 left-4 z-50 flex flex-col gap-2 animate-fade-in">
+      <div className="flex items-center gap-3">
+        {/* Level Hexagon */}
+        <div className="relative">
+          <Hexagon 
+            className={`w-16 h-16 text-yellow-500 fill-yellow-500/20 ${canLevelUp ? 'animate-pulse' : ''}`}
+            style={{ animationDuration: canLevelUp ? '1s' : '3s' }}
+          />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="text-xl font-bold text-yellow-500 drop-shadow-[0_0_8px_rgba(234,179,8,0.5)]">
+              {profile.level}
+            </span>
+          </div>
         </div>
-      </div>
 
       {/* XP Bar */}
       <div className="flex flex-col gap-1">
@@ -105,10 +111,21 @@ export const XPBar = ({ profile }: XPBarProps) => {
         </div>
       </div>
 
-      {/* XP Gain Notification */}
-      {showGain && (
-        <div className="absolute left-1/2 -translate-x-1/2 -top-8 animate-fade-in text-yellow-400 font-bold text-lg drop-shadow-[0_0_10px_rgba(234,179,8,0.8)]">
-          +{gainAmount} XP
+        {/* XP Gain Notification */}
+        {showGain && (
+          <div className="absolute left-1/2 -translate-x-1/2 -top-8 animate-fade-in text-yellow-400 font-bold text-lg drop-shadow-[0_0_10px_rgba(234,179,8,0.8)]">
+            +{gainAmount} XP
+          </div>
+        )}
+      </div>
+
+      {/* Level Up Available Notification */}
+      {canLevelUp && (
+        <div className="ml-20 animate-pulse">
+          <div className="glass border border-yellow-500 rounded-lg px-4 py-2 bg-yellow-500/10">
+            <div className="text-sm font-bold text-yellow-500">LEVEL UP AVAILABLE</div>
+            <div className="text-xs text-yellow-400">Click to claim your reward</div>
+          </div>
         </div>
       )}
     </div>

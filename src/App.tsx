@@ -4,6 +4,11 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import { Login } from "./pages/Login";
+import { Register } from "./pages/Register";
+import { ProtectedRoute } from "./components/ProtectedRoute";
+import { CharacterCreation } from "./pages/CharacterCreation";
+import { Profile } from "./pages/Profile";
 import Challenges from "./pages/Challenges";
 import Pricing from "./pages/Pricing";
 import IntermediateTrack from "./pages/IntermediateTrack";
@@ -61,11 +66,17 @@ const App = () => (
         <AppWrapper>
           <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/intermediate-track" element={<IntermediateTrack />} />
-          <Route path="/blacksite-missions" element={<BlacksiteMissions />} />
-          <Route path="/challenges" element={<Challenges />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/level/1" element={<Level1 />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          
+          <Route element={<ProtectedRoute />}>
+            <Route path="/profile/create" element={<CharacterCreation />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/intermediate-track" element={<IntermediateTrack />} />
+            <Route path="/blacksite-missions" element={<BlacksiteMissions />} />
+            <Route path="/challenges" element={<Challenges />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/level/1" element={<Level1 />} />
           <Route path="/level/2" element={<Level2 />} />
           <Route path="/level/3" element={<Level3 />} />
           <Route path="/level/4" element={<Level4 />} />
