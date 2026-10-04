@@ -75,10 +75,6 @@ const QS = [
  cats:[P("تتفق","Agree"),P("تختلف","Differ")],
  items:[{p:P("توحيد الله","Tawhid"),c:0},{p:P("مكارم الأخلاق","Noble morals"),c:0},{p:P("الشريعة","The Shari‘ah"),c:1},{p:P("المنهاج","The manhaj"),c:1}],
  w:P("تتفق في الأصول وتختلف في الفروع.","Agree in the roots, differ in the branches.")},
-{id:"L1-22",l:1,t:"short",q:P("وضِّح ما يدل عليه الحديث النبوي الشريف.","Explain what the noble Hadith indicates."),
- ans:P("يدل الحديث على تشبيه رسالات الأنبياء السابقين ببناء يتكامل بكل رسالة، ثم جاءت الرسالة الخاتمة رسالة نبينا محمد ﷺ لتكمل هذا البناء وتكمل الدين إلى يوم القيامة.","The Hadith likens earlier prophets’ messages to a building that grows complete with each message; then the final message, our Prophet Muhammad’s ﷺ, came to complete it and complete the religion until the Day of Judgement.")},
-{id:"L1-23",l:1,t:"short",q:P("كيف ترد على من يزعم أن الإسلام مناف للشرائع السابقة؟ (إجابة مقترحة)","How do you answer someone who says Islam contradicts earlier laws? (suggested answer)"),
- ans:P("الإسلام مصدّق لما قبله (آل عمران ٥٠)، والرسالات تتفق في التوحيد ومكارم الأخلاق، والإيمان بجميع الرسل جزء من عقيدتنا، والاختلاف في بعض الأحكام لا يعني التناقض. وحقيقة الدين الاستسلام لله في كل الرسالات.","Islam confirms what came before (3:50); the messages agree in Tawhid and noble morals; belief in all messengers is part of our creed; differences in some rulings are not contradiction; and the essence of religion is submission to Allah in every message.")},
 {id:"L1-24",l:1,t:"mcq",q:P("لماذا قال الناس: «هلّا وُضعت هذه اللبنة؟»","Why did the people say, “If only this brick were put in place”?"),tag:"hadith",
  o:[P("رأوا جمال البناء وشعروا بنقص موضع واحد","They saw the building’s beauty yet felt one place was missing"),P("لأنهم كرهوا البيت","Because they disliked the house"),P("لأنهم أرادوا هدمه","Because they wanted it demolished"),P("لأن البيت كان صغيرًا جدًا","Because the house was too small")],a:0,
  w:P("الإعجاب مع الشعور بالحاجة إلى مكمّل.","Admiration mixed with the sense of a need for a completer.")},
@@ -136,12 +132,6 @@ const QS = [
  cats:[P("طاعة يوسف","Yusuf’s obedience"),P("حفظ الله له","Allah’s protection")],
  items:[{p:P("عفا عن إخوته","He forgave his brothers"),c:0},{p:P("نجاه من البئر","Saved from the well"),c:1},{p:P("صبر في السجن","Patient in prison"),c:0},{p:P("ظهرت براءته","His innocence appeared"),c:1},{p:P("عرض إدارة الخزائن","He offered to run the storehouses"),c:0},{p:P("مكانة في مصر","Standing in Egypt"),c:1}],
  w:P("الطاعة فعل العبد، والحفظ فعل الله.","Obedience is the servant’s act; protection is Allah’s act.")},
-{id:"L2-15",l:2,t:"short",q:P("اذكر بعض مظاهر طاعة الله من قصة يوسف ﷺ (٦).","List signs of obedience to Allah from Yusuf’s story (6)."),
- ans:P("١ـ الالتزام بطاعة الوالدين ٢ـ الخوف من الله وترك الفاحشة ٣ـ الصبر والرضا ٤ـ المبادرة إلى الخير ٥ـ استغلال الفرص للدعوة إلى الله ٦ـ العفو عن المسيء","1) Obeying parents 2) Fear of Allah and leaving immorality 3) Patience and contentment 4) Initiative towards good 5) Using opportunities to call to Allah 6) Forgiving the wrongdoer")},
-{id:"L2-16",l:2,t:"short",q:P("يظهر حفظ الله ليوسف في مواقف عديدة، اذكرها (٤).","Allah’s protection of Yusuf appears in many situations. List them (4)."),
- ans:P("١ـ نجاه من كيد إخوته ٢ـ حفظه من الخطيئة ٣ـ أظهر براءته من التهمة ٤ـ جعله صاحب مكانة وشرف في مصر","1) Saved him from his brothers’ plot 2) Kept him from sin 3) Showed his innocence 4) Made him a man of standing and honour in Egypt")},
-{id:"L2-17",l:2,t:"short",q:P("ما الدليل على المبادرة إلى الخير في قصة يوسف ﷺ؟","What shows taking the initiative towards good in Yusuf’s story?"),
- ans:P("عندما عُرض على الملك أن يكون مسؤولًا عن شؤون المال والزراعة في البلاد لما يعلم من حسن تدبيره لها.","He was made responsible for the country’s finance and agriculture, because he knew his own good management of them.")},
 {id:"L2-18",l:2,t:"tf",q:P("جعل الله حياة الأنبياء والرسل أنموذجًا عمليًا للمسلمين.","Allah made the prophets’ lives a practical model for Muslims."),a:true,
  w:P("للاقتداء بهم في الأخلاق والعبادة.","To follow them in morals and worship.")},
 {id:"L2-19",l:2,t:"mcq",q:P("«يتمثل الأنبياء ببعض القيم المعبّرة عن كمالات الإنسانية»: التصويب هو:","“The prophets embody some values expressing human perfection.” The correction is:"),
@@ -222,15 +212,6 @@ const QS = [
 {id:"L3-19",l:3,t:"match",q:P("طابق وصف القرآن بمعناه:","Match each Qur’an description with its meaning:"),
  pairs:[[P("مصدِّق","Confirming"),P("يصدّق التوراة والإنجيل","Confirms the Tawrah and Injil")],[P("مهيمن","Muhaymin"),P("حافظ وشاهد وحاكم","Guardian, witness, judge")],[P("خاتم الكتب","Final of the books"),P("آخر ما أنزل الله","Allah’s last revelation")]],
  w:P("من حوار الأسرة في الدرس.","From the family’s conversation in the lesson.")},
-{id:"L3-20",l:3,t:"order",q:P("رتّب المحطات الأربع للأسرة في الدرس:","Put the family’s four stops in order:"),
- items:[P("بيان معاني الآيات","Explaining the meanings of the verses"),P("علاقة القرآن بالكتب السابقة","The Qur’an’s relation to earlier books"),P("مكمن الاختلاف بين الكتب","Where the books differ"),P("قيم دعت إليها الآيات","Values the verses called to")],
- w:P("الأولى إلى الرابعة كما ذُكرت.","First to fourth as stated.")},
-{id:"L3-21",l:3,t:"short",q:P("اذكر بعض المعاني من الآيات (٤٨–٥٠) من سورة المائدة.","List some meanings from Al-Ma’idah 48–50."),
- ans:P("١ـ القرآن هو الكتاب الذي يجب الإيمان به واتباعه فهو مهيمن وحاكم على الكتب السابقة ٢ـ الشرائع في الكتب المنزلة متعددة ٣ـ تحذر الآيات من الفتنة بمخالفة القرآن واتباع الهوى","1) The Qur’an must be believed and followed; it is dominant and a judge over earlier books 2) The laws in the revealed books are many 3) The verses warn against temptation by opposing the Qur’an and following desire")},
-{id:"L3-22",l:3,t:"short",q:P("بماذا تميز القرآن الكريم عن الكتب المنزلة قبله؟","How did the Qur’an stand out from the books revealed before it?"),
- ans:P("١ـ هو أعظم الكتب وأشملها وأحكمها ٢ـ كتاب باقٍ ومعتمد لا يغيّر إلى يوم القيامة","1) The greatest, most comprehensive and most judicious of books 2) A preserved, authoritative book that will not change until the Day of Judgement")},
-{id:"L3-23",l:3,t:"short",q:P("ما دلالة الأمر بالاستباق إلى الخيرات والنهي عن اتباع الهوى؟","What does the command to race to good deeds and the ban on following desire indicate?"),
- ans:P("يدل على أن فعل الأعمال الصالحة والاستقامة على طاعة الله هو الذي يجعل المؤمن متبعًا ومعتصمًا بكتاب الله تعالى وهو القرآن الكريم.","It indicates that doing good deeds and being steadfast in obedience to Allah is what makes the believer a follower of, and holder to, Allah’s Book, the Noble Qur’an.")},
 {id:"L3-24",l:3,t:"tf",q:P("اختلاف الشرائع ابتلاء من الله يعقبه الرجوع إليه.","The difference of laws is a test from Allah, followed by return to Him."),a:true,
  w:P("﴿لِّيَبْلُوَكُمْ﴾ ثم ﴿إِلَى ٱللَّهِ مَرْجِعُكُمْ﴾.","“…to test you” then “To Allah is your return.”")},
 {id:"L3-25",l:3,t:"multi",q:P("من صور اتباع الهوى (اختر ٣):","Forms of following desire (choose 3):"),
@@ -266,6 +247,267 @@ const QS = [
  o:[P("أجب بالدليل على الادعاء","Answer the claim with evidence"),P("وافقه","Agree with him"),P("اسكت","Stay silent"),P("اذكر اسمه","Name him")],a:0,
  w:P("جواب مبني على أدلة من الدرس.","An answer built on evidence from the lesson.")},
 ];
+
+/* ================= DENSE MATCHING & SORTING (added) ================= */
+const M = (id,l,q,pairs,w,tag) => ({id,l,t:"match",q,pairs,w,...(tag?{tag}:{})});
+const C = (id,l,q,cats,items,w,tag) => ({id,l,t:"cat",q,cats,items:items.map(([p,c])=>({p,c})),w,...(tag?{tag}:{})});
+QS.push(
+/* ---------- LESSON 1 · matching ---------- */
+M("N1-01",1,P("طابق كل سؤال بجوابه (الدرس الأول كاملًا):","Match each question with its answer (all of Lesson 1):"),[
+ [P("تتفق الرسالات في","The messages agree in"),P("توحيد الله ومكارم الأخلاق","Tawhid and noble morals")],
+ [P("تختلف الرسالات في","The messages differ in"),P("الشريعة والمنهاج","The Shari‘ah and the manhaj")],
+ [P("الإيمان بالرسل يقتضي","Belief in the messengers requires"),P("الإيمان بهم جميعًا، ودراسة سيرتهم والاقتداء بهم، والدفاع عنهم","Believing in all, studying and following them, defending them")],
+ [P("تشترك دعوة الرسل في","The messengers’ call shares"),P("المصدر، والهدف والغاية، والقيم والأخلاق","Source, goal and purpose, values and morals")],
+ [P("الحكمة من تعدد الرسالات","The wisdom of many messages"),P("مراحل نمو البشرية + التكامل وأخوة الإيمان","Stages of humanity’s growth + complementarity and brotherhood of faith")],
+ [P("مميزات رسالة محمد ﷺ","Features of Muhammad’s ﷺ message"),P("عامة، خالدة، صالحة لكل زمان ومكان","Universal, eternal, valid for every time and place")],
+ [P("راوي الحديث وموضعه","The Hadith’s narrator and place"),P("أبو هريرة · البخاري، المناقب، رقم ٣٣٤٢","Abu Hurayrah · al-Bukhari, Virtues, no. 3342")]],
+ P("خلاصة الدرس الأول.","The summary of Lesson 1.")),
+M("N1-02",1,P("طابق عناصر صورة الحديث بما ترمز إليه:","Match each element of the Hadith’s picture with what it stands for:"),[
+ [P("الرجل الذي بنى بيتًا","The man who built a house"),P("الأنبياء الذين أسهموا في بناء الدين واحدًا بعد واحد","The prophets who built up the religion one after another")],
+ [P("البيت الذي أحسنه وأجمله","The house made excellent and beautiful"),P("الرسالات السابقة التي لبّت حاجات أممها","The earlier messages that met their peoples’ needs")],
+ [P("موضع اللبنة من الزاوية","The place of one brick in the corner"),P("الحاجة إلى الرسالة الخاتمة","The need for the final message")],
+ [P("الناس يطوفون به ويعجبون","People circling and marvelling"),P("إعجاب البشرية بما سبق وشعورها بالنقص","Humanity’s admiration for what came before and sense of a gap")],
+ [P("«هلّا وُضعت هذه اللبنة»","“If only this brick were put in place”"),P("تشوّق الناس إلى من يُتمّ البناء","The people’s longing for the one who completes it")],
+ [P("«فأنا اللبنة»","“So I am the brick”"),P("رسالة محمد ﷺ تكمل البناء","Muhammad’s ﷺ message completes the building")],
+ [P("«خاتم النبيين»","“Seal of the Prophets”"),P("لا نبي ولا رسول بعده","No prophet or messenger after him")]],
+ P("الحديث تشبيه (مثل) بجميع أجزائه.","The Hadith is a parable, every part of it."),"hadith"),
+M("N1-03",1,P("طابق الآية بما تدل عليه في الدرس الأول:","Match each verse with what it proves in Lesson 1:"),[
+ [P("النحل ٣٦","An-Nahl 36"),P("كل رسول دعا إلى عبادة الله واجتناب الطاغوت","Every messenger called to worship Allah and avoid false gods")],
+ [P("الأحزاب ٤٠","Al-Ahzab 40"),P("محمد ﷺ خاتم النبيين فلا نبي بعده","Muhammad ﷺ is the Seal of the Prophets; no prophet after him")],
+ [P("المائدة ٣","Al-Ma’idah 3"),P("اكتمل الدين وتمت النعمة","The religion was perfected and the favour completed")],
+ [P("المائدة ٤٨","Al-Ma’idah 48"),P("لكل أمة شرعة ومنهاج","Each nation has a law and a way")],
+ [P("البقرة ٢٨٥","Al-Baqarah 285"),P("لا تفريق بين أحد من الرسل","No distinction between any of the messengers")],
+ [P("النساء ١٦٣","An-Nisa’ 163"),P("الوحي واحد إلى نوح والنبيين من بعده","One revelation to Nuh and the prophets after him")],
+ [P("آل عمران ٥٠","Al ‘Imran 50"),P("عيسى مصدّق لما بين يديه من التوراة","Isa confirming what was before him of the Tawrah")],
+ [P("آل عمران ١٩","Al ‘Imran 19"),P("الدين عند الله الإسلام (الاستسلام له)","The religion with Allah is Islam (submission to Him)")]],
+ P("حفظ رقم الآية مع المعنى.","Learn the verse number with its meaning.")),
+M("N1-04",1,P("طابق الأمر المشترك بين دعوة الرسل بتفصيله وسببه:","Match each shared element of the messengers’ call with its detail and reason:"),[
+ [P("المصدر","Source"),P("أرسلهم الله بالهدى ودين الحق ← فلا تناقض بينها","Allah sent them with guidance and the true religion → no contradiction between them")],
+ [P("الهدف والغاية","Goal and purpose"),P("توحيد الله في أسمائه وصفاته وأفعاله وإفراده بالعبادة ← أصل كل دعوة نبوية","Oneness of Allah in His names, attributes, acts, singling Him out in worship → the root of every call")],
+ [P("القيم والأخلاق","Values and morals"),P("«إنما بعثت لأتمم مكارم الأخلاق» ← أتمّ ما دعا إليه الأنبياء قبله","“I was sent to perfect noble morals” → he completed what earlier prophets called to")]],
+ P("ثلاثة أشياء مشتركة.","Three shared things.")),
+M("N1-05",1,P("طابق كلمات الحديث بمعانيها:","Match the Hadith’s words with their meanings:"),[
+ [P("لَبِنَة","labinah"),P("الطوبة التي يُبنى بها الجدار","The brick a wall is built with")],
+ [P("يَطُوفُونَ بِهِ","yatufuna bihi"),P("يدورون حوله وينظرون إليه","They walk around it looking at it")],
+ [P("يَعْجَبُونَ لَهُ","ya‘jabuna lahu"),P("يندهشون من حسنه","They marvel at its beauty")],
+ [P("هَلَّا","halla"),P("أداة تحضيض بمعنى «لماذا لم؟»","A particle of urging meaning “why was it not…?”")],
+ [P("زَاوِيَة","zawiyah"),P("ركن البناء الذي نقص موضع لبنة منه","The corner of the building where one brick was missing")],
+ [P("خَاتَم","khatam"),P("من يُختم به فلا شيء بعده","The one with whom it is sealed; nothing after")]],
+ P("مفردات الحديث.","The Hadith’s vocabulary."),"hadith"),
+M("N1-06",1,P("طابق الفكرة التربوية في الدرس بتفصيلها:","Match each idea in Lesson 1 with its detail:"),[
+ [P("أسلوب المثل في الحديث","The parable style in the Hadith"),P("إيجاز اللفظ وإصابة المعنى وحسن التشبيه","Brevity of words, accuracy of meaning, beauty of comparison")],
+ [P("حاجة الناس قبل مبعثه ﷺ","People’s need before his mission"),P("شعروا بالحاجة إلى مكمّل لبيت الرسالات (النساء ١٦٤)","They felt the need for a completer of the house of messages (4:164)")],
+ [P("الشرائع السابقة","The earlier laws"),P("لبّت حاجات الإنسان في زمانها مكتملة","Met people’s needs in their time, complete")],
+ [P("الشريعة الإسلامية","The Islamic law"),P("الشريعة الخاتمة الصالحة لكل زمان ومكان","The final law, valid for every time and place")],
+ [P("الوعي بأخوّة الأنبياء","Awareness of the prophets’ brotherhood"),P("يقتضي الابتعاد عن النزاع حفاظًا على الميثاق","Requires avoiding dispute to honour the covenant")],
+ [P("تصديق كل نبي بمن سبقه","Each prophet confirming those before him"),P("يمتد بالضرورة إلى أتباع هؤلاء","Necessarily extends to those prophets’ followers")]],
+ P("من شرح الكتاب.","From the textbook’s explanation.")),
+M("N1-07",1,P("طابق الموقف بالمقتضى من مقتضيات الإيمان بالرسل:","Match each situation with the requirement of belief in the messengers it shows:"),[
+ [P("مسلم يؤمن بموسى وعيسى ومحمد جميعًا","A Muslim who believes in Musa, Isa and Muhammad all together"),P("الإيمان بهم جميعًا بلا تفريق","Believing in all without distinction")],
+ [P("طالب يقرأ سيرة نبي ويتخلق بأخلاقه","A student who reads a prophet’s life and adopts his morals"),P("دراسة سيرتهم والاقتداء بهم","Studying their lives and following them")],
+ [P("من يرد على كذبة تُنسب إلى نبي","Someone who refutes a lie attributed to a prophet"),P("الدفاع عنهم ورد ما ينسب إليهم من الباطل","Defending them and refuting falsehood about them")],
+ [P("من يصدّق نبيًا ويكذّب آخر","Someone who believes one prophet and denies another"),P("مخالف للمقتضى الأول: التفريق بين الرسل","Violates the first requirement: separating the messengers")]],
+ P("تطبيق عملي على المقتضيات.","Practical application of the requirements.")),
+
+/* ---------- LESSON 2 · matching ---------- */
+M("N2-01",2,P("طابق مظهر الطاعة بدليله وسببه (قصة يوسف ﷺ):","Match each sign of obedience with its proof and reason (Yusuf’s ﷺ story):"),[
+ [P("طاعة الوالدين","Obeying his parents"),P("التزم نصيحة أبيه: لا يقصص رؤياه على إخوته (يوسف ٥) ← طاعتهما طاعة لله","Kept his father’s advice not to tell his vision (12:5) → obeying parents is obeying Allah")],
+ [P("الخوف من الله وترك الفاحشة","Fear of Allah and leaving immorality"),P("﴿معاذ الله﴾ مع غلق الأبواب (يوسف ٢٣) ← تقوى ظهرت وكل الظروف مهيأة للحرام","“Allah forbid!” with doors locked (12:23) → God-fear despite every circumstance favouring sin")],
+ [P("الصبر والرضا","Patience and contentment"),P("صبر على الإخوة والبئر والفراق والإغراء والسجن (يوسف ٩٠)","Patient with the brothers, well, parting, temptation and prison (12:90)")],
+ [P("المبادرة إلى الخير","Initiative towards good"),P("﴿اجعلني على خزائن الأرض﴾ (يوسف ٥٥) ← لحسن تدبيره","“Appoint me over the storehouses” (12:55) → because of his good management")],
+ [P("استغلال الفرص للدعوة","Using opportunities to call to Allah"),P("﴿يا صاحبي السجن أأرباب متفرقون…﴾ (يوسف ٣٩) في السجن","“O companions of prison, are separate lords better…” (12:39) in prison")],
+ [P("العفو عن المسيء","Forgiving the wrongdoer"),P("﴿لا تثريب عليكم اليوم﴾ (يوسف ٩٢) مع الدعاء لهم بالمغفرة","“No blame on you today” (12:92) and prayer for their forgiveness")]],
+ P("المظاهر الستة في ملزمتك.","The six signs in your notes.")),
+M("N2-02",2,P("طابق موقف حفظ الله ليوسف بدليله:","Match each situation of Allah’s protection of Yusuf with its proof:"),[
+ [P("نجاه من كيد إخوته","Saved him from his brothers’ plot"),P("ألقوه في البئر فالتقطه بعض السيارة (يوسف ١٠)","They threw him in the well and travellers picked him up (12:10)")],
+ [P("حفظه من الخطيئة","Kept him from sin"),P("﴿كذلك لنصرف عنه السوء والفحشاء﴾ (يوسف ٢٤)","“Thus We turned away evil and immorality from him” (12:24)")],
+ [P("أظهر براءته","Showed his innocence"),P("اعترف النسوة وامرأة العزيز: ﴿الآن حصحص الحق﴾ (يوسف ٥١)","The women and the Aziz’s wife confessed: “Now the truth has become clear” (12:51)")],
+ [P("جعله صاحب مكانة وشرف في مصر","Gave him standing and honour in Egypt"),P("يملك الأمر والنهي ويدير المال وشؤون الدولة حين جُعل على الخزائن","He held command, ran finance and state affairs once placed over the treasuries")],
+ [P("(إضافة الكتاب) رغد العيش","(Textbook addition) A comfortable life"),P("عاش في قصر العزيز فأكرمت امرأته مثواه","He lived in the Aziz’s palace and his wife honoured his stay")]],
+ P("أربعة في ملزمتك والخامس من الكتاب.","Four in your notes, the fifth from the textbook.")),
+M("N2-03",2,P("طابق شخصيات القصة بدورها:","Match each figure in the story with their role:"),[
+ [P("يعقوب ﷺ","Ya‘qub ﷺ"),P("الأب الذي أطاعه يوسف، وقدوة في الصبر والتوكل","The father Yusuf obeyed; a model of patience and reliance")],
+ [P("إخوة يوسف","Yusuf’s brothers"),P("دبّروا الكيد وألقوه في البئر، ثم عفا عنهم","Plotted against him and threw him in the well; he later forgave them")],
+ [P("السيارة","The travellers"),P("التقطوه من البئر فنجّاه الله بهم","Picked him out of the well, by which Allah saved him")],
+ [P("امرأة العزيز","The Aziz’s wife"),P("راودته ثم اعترفت بأنها راودته وبأنه من الصادقين","Tempted him, then confessed she had and that he was truthful")],
+ [P("صاحبا السجن","The two prison companions"),P("دعاهما يوسف إلى التوحيد في السجن","Yusuf called them to Tawhid in prison")],
+ [P("الملك","The king"),P("مكّن يوسف من إدارة الاقتصاد: ﴿مكين أمين﴾","Entrusted Yusuf with the economy: “firmly established, trustworthy”")]],
+ P("أشخاص قصة يوسف في الدرس.","The people of Yusuf’s story in the lesson.")),
+M("N2-04",2,P("طابق أثر الإيمان بالله بتفصيله:","Match each effect of faith in Allah with its detail:"),[
+ [P("منطلق القيم","The starting point of values"),P("كل القيم التي دعا إليها الأنبياء تنبع من الإيمان بالله","All values the prophets called to flow from faith in Allah")],
+ [P("المراقبة","Mindfulness of Allah"),P("يستشعر أن الله يراه في السر والعلن وفي كل أحواله","Feels that Allah sees him in private and public and in all states")],
+ [P("الاعتصام","Taking refuge"),P("يعتصم بالله إذا خشي الفتنة على نفسه","Takes refuge in Allah when he fears temptation")],
+ [P("استقامة السلوك","Upright conduct"),P("لا يفعل إلا ما يرضي ربه","Does only what pleases his Lord")],
+ [P("الحماية","Protection"),P("من تحصّن بالله وأخلص عقيدته حماه الله من الفتن والسوء","Whoever fortifies himself with Allah and purifies his belief is shielded from trials and evil")]],
+ P("الإيمان يدفع لفعل الخير وطاعة الله.","Faith drives toward good and obedience.")),
+M("N2-05",2,P("طابق آيات سورة يوسف بالقيمة التي تعبّر عنها:","Match verses of Surah Yusuf with the value they express:"),[
+ [P("﴿فصبر جميل﴾ (١٨)","“So beautiful patience” (18)"),P("الصبر الجميل","Beautiful patience")],
+ [P("﴿فالله خير حافظًا﴾ (٦٤)","“Allah is the best guardian” (64)"),P("الثقة بحفظ الله","Trust in Allah’s protection")],
+ [P("﴿والله على ما نقول وكيل﴾ (٦٦)","“Allah is Trustee over what we say” (66)"),P("التوكل على الله","Reliance on Allah")],
+ [P("﴿عليه توكلت﴾ (٦٧)","“In Him I trust” (67)"),P("التوكل مع الأخذ بالأسباب","Reliance together with taking the means")],
+ [P("﴿ولا تيأسوا من روح الله﴾ (٨٧)","“Do not despair of Allah’s mercy” (87)"),P("الأمل وعدم اليأس","Hope; no despair")],
+ [P("﴿معاذ الله﴾ (٢٣)","“Allah forbid!” (23)"),P("العفة والاعتصام بالله","Chastity and taking refuge in Allah")],
+ [P("﴿لا تثريب عليكم اليوم﴾ (٩٢)","“No blame on you today” (92)"),P("العفو والصفح","Pardon and forgiveness")]],
+ P("بعضها من نشاط الكتاب (استنتاج).","Some from the textbook activity (deduced).")),
+M("N2-06",2,P("طابق الحديث بالدرس المستفاد منه في الدرس الثاني:","Match each Hadith with the lesson it teaches in Lesson 2:"),[
+ [P("«احفظ الله يحفظك…» (الترمذي)","“Be mindful of Allah and He will protect you…” (Tirmidhi)"),P("من حفظ الله بالطاعة حفظه الله، ويستعين به وحده","Whoever guards Allah by obedience, Allah guards him, and he seeks help from Him alone")],
+ [P("«عجبًا لأمر المؤمن…» (مسلم)","“How wonderful is the believer’s affair…” (Muslim)"),P("شكر في السراء وصبر في الضراء، وكلاهما خير","Gratitude in ease, patience in hardship; both good")],
+ [P("«كلكم راعٍ وكلكم مسؤول عن رعيته» (البخاري ٨٩٣)","“Each of you is a shepherd…” (Bukhari 893)"),P("المسؤولية، كما تولّى يوسف خزائن الأرض","Responsibility, like Yusuf’s taking charge of the treasuries")],
+ [P("«إنما بعثت لأتمم مكارم الأخلاق»","“I was sent only to perfect noble morals”"),P("القيم الخلقية مشتركة بين الأنبياء","Moral values are shared among the prophets")]],
+ P("أحاديث الدرسين الأول والثاني.","Hadiths of Lessons 1 and 2.")),
+M("N2-07",2,P("طابق كل آية من سورة يوسف بالحدث:","Match each verse of Surah Yusuf with the event:"),[
+ [P("يوسف ٥","12:5"),P("نصيحة يعقوب ألّا يقصّ رؤياه على إخوته","Ya‘qub advises him not to tell his vision to his brothers")],
+ [P("يوسف ١٠","12:10"),P("اقتراح إلقائه في غيابة الجب لتلتقطه السيارة","The proposal to cast him into the well for travellers to pick up")],
+ [P("يوسف ٢٣","12:23"),P("مراودة امرأة العزيز وغلق الأبواب وقوله معاذ الله","The Aziz’s wife’s temptation, the locked doors, and “Allah forbid!”")],
+ [P("يوسف ٣٩","12:39"),P("دعوته صاحبي السجن إلى التوحيد","His call to the two prison companions to Tawhid")],
+ [P("يوسف ٥١","12:51"),P("اعتراف امرأة العزيز: ﴿الآن حصحص الحق﴾","The Aziz’s wife’s confession: “Now the truth has become clear”")],
+ [P("يوسف ٥٥","12:55"),P("عرضه أن يكون على خزائن الأرض","His offer to be placed over the land’s storehouses")],
+ [P("يوسف ٩٠","12:90"),P("﴿إنه من يتق ويصبر فإن الله لا يضيع أجر المحسنين﴾","“Whoever fears Allah and is patient, Allah does not waste the reward of the good-doers”")],
+ [P("يوسف ٩٢","12:92"),P("عفوه عن إخوته ودعاؤه لهم بالمغفرة","His pardon of his brothers and prayer for their forgiveness")]],
+ P("خريطة السورة كما في الدرس.","The surah’s map as in the lesson.")),
+M("N2-08",2,P("طابق القيمة بالمظهر السلوكي الذي عبّر عنها:","Match each value with the behaviour that expressed it:"),[
+ [P("العفة","Chastity"),P("رفض مراودة امرأة العزيز رغم تهيؤ الظروف","Refusing the Aziz’s wife’s advance although circumstances were ready")],
+ [P("الصبر","Patience"),P("تحمّل الإلقاء في البئر والسجن وفراق الأهل","Bearing the well, prison and separation from family")],
+ [P("المبادرة","Initiative"),P("عرض إمكاناته لإدارة المال والزراعة","Offering his abilities to run finance and agriculture")],
+ [P("العفو","Forgiveness"),P("رد ثمن البضاعة إلى إخوته والدعاء لهم","Returning his brothers’ payment and praying for them")],
+ [P("الدعوة","Da‘wah"),P("استغلال وجوده في السجن لدعوة صاحبيه","Using his time in prison to call his companions")],
+ [P("بر الوالدين","Honouring parents"),P("حفظ سر الرؤيا والتزام نصيحة أبيه","Keeping the vision secret and heeding his father’s advice")]],
+ P("القيمة ← السلوك.","Value → behaviour.")),
+
+/* ---------- LESSON 3 · matching ---------- */
+M("N3-01",3,P("طابق مفردات الآيات بمعانيها:","Match the verses’ vocabulary with its meanings:"),[
+ [P("وَمُهَيْمِنًا","muhayminan"),P("حافظًا لما تقدّمه من الكتب وشاهدًا لها وعليها بالصحة والثبات","Guarding what came before from other books, a witness for and over them in authenticity")],
+ [P("شِرْعَةً","shir‘atan"),P("شريعة: ما شرعه الله لعباده من الدين ونظامه وأحكامه","A law: what Allah legislated for His servants, the religion, its system and rulings")],
+ [P("وَمِنْهَاجًا","wa-minhajan"),P("طريقًا واضحًا مستمرًا يسير عليه الناس في الدين","A clear continuous road people walk in religion")],
+ [P("يَفْتِنُوكَ","yaftinuka"),P("يضلّوك عن الحق أو يميلوا بك من الحق إلى الباطل","Lead you astray from truth, or turn you from truth to falsehood")],
+ [P("يَبْغُونَ","yabghun"),P("يطلبون","They seek")],
+ [P("الهَوَى","al-hawa"),P("الميل عن الحق (حاشية الكتاب)","Inclining away from the truth (textbook footnote)")]],
+ P("مفردات الدرس الثالث.","Lesson 3 vocabulary.")),
+M("N3-02",3,P("طابق وصف القرآن بتفصيله:","Match each description of the Qur’an with its detail:"),[
+ [P("مصدّق","Confirming"),P("يصدّق ما تقدم من الكتب الإلهية كالتوراة والإنجيل لأنها من عند الله","Confirms earlier divine books like the Tawrah and Injil because all are from Allah")],
+ [P("مهيمن","Muhaymin"),P("حافظ لها وشاهد عليها بالصحة","Guardian over them and a witness to their authenticity")],
+ [P("أمين وشاهد وحاكم","Trustworthy, witness, judge"),P("يحكم على الكتب السابقة كلها","It judges all the earlier books")],
+ [P("آخر الكتب وخاتمها","Last and final of the books"),P("آخر ما أنزل الله من الكتب","Allah’s last revealed Book")],
+ [P("أشملها وأعظمها وأحكمها","Most comprehensive, greatest, most judicious"),P("جمع محاسن ما قبله وزاده من الكمالات ما ليس في غيره","Gathered the virtues of what came before and added perfections found in no other")],
+ [P("محفوظ","Preserved"),P("﴿إنا نحن نزلنا الذكر وإنا له لحافظون﴾ (الحجر ٩)","“It is We who sent down the Reminder and We will guard it” (15:9)")]],
+ P("حوار الأسرة في الدرس.","The family’s conversation in the lesson.")),
+M("N3-03",3,P("طابق العبارة القرآنية من المائدة (٤٨–٥٠) بفكرتها:","Match each phrase from Al-Ma’idah 48–50 with its idea:"),[
+ [P("﴿مصدقًا لما بين يديه ومهيمنًا عليه﴾","“confirming what was before it and a guardian over it”"),P("القرآن حاكم على الكتب السابقة","The Qur’an is judge over earlier books")],
+ [P("﴿لكل جعلنا منكم شرعة ومنهاجًا﴾","“For each We made a law and a way”"),P("الشرائع متعددة","The laws are many")],
+ [P("﴿فاستبقوا الخيرات﴾","“So race to good deeds”"),P("قيمة المسارعة إلى الخير","The value of hastening to good")],
+ [P("﴿ولا تتبع أهواءهم﴾","“do not follow their desires”"),P("النهي عن اتباع الهوى","The prohibition of following desire")],
+ [P("﴿واحذرهم أن يفتنوك﴾","“beware lest they tempt you”"),P("التحذير من الفتنة","Warning against temptation")],
+ [P("﴿ليبلوكم فيما آتاكم﴾","“…to test you in what He gave you”"),P("الاختلاف ابتلاء","Difference is a test")],
+ [P("﴿إلى الله مرجعكم جميعًا﴾","“To Allah is your return all together”"),P("المرجع إلى الله فيحاسب على الاختلاف","The return is to Allah, who will inform you of your differences")],
+ [P("﴿أفحكم الجاهلية يبغون﴾","“Is it the judgement of the Days of Ignorance they seek?”"),P("إنكار طلب غير حكم الله","Rebuke for seeking any judgement other than Allah’s")]],
+ P("بعض هذه الأفكار هي معاني ملزمتك الثلاثة.","Several of these are your notes’ three meanings.")),
+M("N3-04",3,P("طابق محطات الأسرة الأربع بمضمونها:","Match the family’s four stops with their content:"),[
+ [P("المحطة الأولى","First stop"),P("بيان معنى الآيات: تتمّ السياق القرآني بعد ذكر التوراة والإنجيل","Explaining the verses: they complete the Qur’anic context after the Tawrah and Injil")],
+ [P("المحطة الثانية","Second stop"),P("علاقة القرآن بالكتب السابقة: مصدّق ومهيمن وشاهد وأمين وحاكم","The Qur’an’s relation to earlier books: confirming, dominant, witness, trustworthy, judge")],
+ [P("المحطة الثالثة","Third stop"),P("مكمن الاختلاف: في الأوامر والنواهي (مثال: الشحوم)","Where they differ: in commands and prohibitions (e.g. fats)")],
+ [P("المحطة الرابعة","Fourth stop"),P("قيم دعت إليها الآيات: الاستباق إلى الخيرات واجتناب الهوى","Values the verses called to: racing to good and avoiding desire")]],
+ P("حوار الأب والأم والأزهر والشيماء.","The father, mother, Al-Azhar and Ash-Shaymaa’s conversation.")),
+M("N3-05",3,P("طابق معنى الآيات الثلاثة بأدلته من النص:","Match each of the three meanings with its textual evidence:"),[
+ [P("القرآن واجب الإيمان به واتباعه ومهيمن على ما قبله","The Qur’an must be believed and followed; dominant over what came before"),P("﴿وأنزلنا إليك الكتاب بالحق مصدقًا لما بين يديه من الكتاب ومهيمنًا عليه﴾","“We revealed to you the Book in truth, confirming and guarding…”")],
+ [P("الشرائع في الكتب المنزلة متعددة","Laws in the revealed books are many"),P("﴿لكل جعلنا منكم شرعة ومنهاجًا﴾","“For each We made a law and a way”")],
+ [P("التحذير من الفتنة واتباع الهوى","Warning against temptation and desire"),P("﴿ولا تتبع أهواءهم عما جاءك من الحق﴾ و﴿واحذرهم أن يفتنوك﴾","“do not follow their desires away from the truth” and “beware lest they tempt you”")]],
+ P("ثلاثة معانٍ في ملزمتك.","The three meanings in your notes.")),
+M("N3-06",3,P("طابق صور اتباع الهوى بما تعنيه:","Match each form of following desire with what it means:"),[
+ [P("ترك العبادة","Leaving worship"),P("التخلي عن عبادة أمر الله بها اتباعًا للشهوة","Dropping a worship Allah commanded to follow appetite")],
+ [P("التذبذب في العقيدة","Wavering in belief"),P("الشك والاضطراب بعد رسوخ العقيدة","Doubt and instability after belief was firm")],
+ [P("التخلي عن الأخلاق الفاضلة","Abandoning virtuous morals"),P("ترك الأخلاق بعد معرفتها","Leaving morals after knowing them")],
+ [P("كل ابتعاد عمّا أمر الله به","Any distancing from what Allah commanded"),P("التعريف العام: الهوى هو الميل عن الحق","The general definition: hawa is inclining away from truth")]],
+ P("من شرح الكتاب.","From the textbook’s explanation.")),
+M("N3-07",3,P("طابق صور الاستباق إلى الخيرات بدلالتها:","Match each form of racing to good deeds with what it means:"),[
+ [P("طاعة الله","Obeying Allah"),P("امتثال أوامره واجتناب نواهيه","Following His commands and avoiding His prohibitions")],
+ [P("اتباع شريعته السمحة","Following His tolerant law"),P("العمل بما شرع الله في العبادات والمعاملات","Acting on what Allah legislated in worship and dealings")],
+ [P("الإيمان برسوله محمد ﷺ","Believing in His Messenger Muhammad ﷺ"),P("تصديقه واتباع ما جاء به","Confirming him and following what he brought")],
+ [P("التصديق بكتابه القرآن","Confirming His Book, the Qur’an"),P("الإيمان بأنه مهيمن على الكتب والعمل به","Believing it dominant over books and acting on it")]],
+ P("﴿فاستبقوا الخيرات﴾.","“So race to good deeds.”")),
+M("N3-08",3,P("طابق ما ورد في عهد الأسرة بسبب الالتزام به:","Match each point of the family’s pledge with the reason for it:"),[
+ [P("جعل القرآن منهج حياة","Make the Qur’an a way of life"),P("لأنه مهيمن على كل ما سواه فلا قول أو فعل يخالف أمر الله","Because it dominates all else, so no word or deed opposes Allah’s command")],
+ [P("الاستباق إلى الخيرات في كل الميادين","Racing to good in all fields"),P("تطبيق الأمر الإلهي وتجنب فعل السيئات","Applying the divine command and avoiding evil")],
+ [P("عدم اتباع الهوى والشهوات","Not following desire and lusts"),P("لأن الله حذّر رسوله ﷺ من أهواء أهل الكتاب، والمسلمون أولى بالتحذير","Because Allah warned His Messenger ﷺ of the People of the Book’s whims; Muslims are even more concerned")]],
+ P("خلاصة نشاط «استفد».","The summary of the “Benefit” box.")),
+
+/* ---------- ALL LESSONS · matching ---------- */
+M("N0-01",0,P("طابق العدد بما يُطلب منه (ملخص الأرقام):","Match each number with what it counts (the numbers summary):"),[
+ [P("٢","2"),P("تتفق الرسالات في (توحيد، أخلاق) · تميز القرآن (أعظم وأشمل، باقٍ)","Messages agree in (Tawhid, morals) · Qur’an’s distinctions (greatest, preserved)")],
+ [P("٣ (الدرس ١)","3 (Lesson 1)"),P("مقتضيات الإيمان بالرسل · أمور دعوة الرسل · مميزات رسالة محمد ﷺ","Belief requirements · call elements · features of Muhammad’s message")],
+ [P("٦","6"),P("مظاهر طاعة يوسف لله","Signs of Yusuf’s obedience to Allah")],
+ [P("٤","4"),P("مواقف حفظ الله ليوسف","Situations of Allah’s protection of Yusuf")],
+ [P("٣ (الدرس ٣)","3 (Lesson 3)"),P("معاني الآيات ٤٨–٥٠","Meanings of verses 48–50")]],
+ P("احفظ العدد قبل التفاصيل.","Learn the count before the details.")),
+M("N0-02",0,P("طابق الدرس بفكرته المحورية وآيته أو حديثه:","Match each lesson with its core idea and key text:"),[
+ [P("الدرس ١: خاتم النبيين","Lesson 1: Seal of the Prophets"),P("الرسالات بناء اكتمل بمحمد ﷺ · حديث اللبنة · الأحزاب ٤٠","Messages are a building completed by Muhammad ﷺ · the brick Hadith · 33:40")],
+ [P("الدرس ٢: قيم رسخها الأنبياء","Lesson 2: Values the Prophets Established"),P("الإيمان يثمر الطاعة والصبر والعفة والعفو · قصة يوسف · يوسف ٢٣ و٩٠ و٩٢","Faith bears obedience, patience, chastity, forgiveness · Yusuf’s story · 12:23, 90, 92")],
+ [P("الدرس ٣: الرسالة الخاتمة","Lesson 3: The Final Message"),P("القرآن مهيمن · الاستباق للخيرات وترك الهوى · المائدة ٤٨–٥٠","The Qur’an is dominant · race to good and leave desire · 5:48–50")]],
+ P("الوحدة الثانية كلها في ثلاث جمل.","The whole unit in three lines.")),
+M("N0-03",0,P("طابق المصطلح بتعريفه الكامل:","Match each term with its full definition:"),[
+ [P("الشريعة","Shari‘ah"),P("ما شرعه الله لعباده من الدين ونظامه وأحكامه","What Allah legislated for His servants: the religion, its system and rulings")],
+ [P("المنهاج","Manhaj"),P("الطريق الواضح المستمر الذي يسير عليه الناس في الدين","The clear continuous road people follow in religion")],
+ [P("خاتم النبيين","Seal of the Prophets"),P("من ختم الله به النبوة فلا نبي بعده","The one with whom Allah ended prophethood")],
+ [P("مهيمن","Muhaymin"),P("الحافظ والشاهد والحاكم على غيره","Guardian, witness and judge over another")],
+ [P("الهوى","Hawa"),P("الميل عن الحق","Inclining away from the truth")],
+ [P("الفتنة","Fitnah"),P("الصرف عن الحق أو الميل إلى الباطل","Diverting from the truth or tilting to falsehood")],
+ [P("الاستباق إلى الخيرات","Racing to good deeds"),P("المسارعة بالمبادرة إلى فعل الخير","Hastening to take the initiative in doing good")],
+ [P("التوكل","Tawakkul"),P("الاعتماد على الله مع الأخذ بالأسباب","Relying on Allah while taking the means")]],
+ P("بطاقات المصطلحات في الدليل.","The glossary cards in the guide.")),
+
+/* ---------- SORTING ---------- */
+C("S1-01",1,P("صنّف: هل تتفق فيه الرسالات أم تختلف؟","Sort: do the messages agree or differ in this?"),[P("تتفق","Agree"),P("تختلف","Differ")],[
+ [P("إفراد الله بالعبادة","Singling out Allah for worship"),0],[P("مكارم الأخلاق","Noble morals"),0],[P("مصدر الرسالة (الله)","The message’s source (Allah)"),0],
+ [P("تفاصيل العبادات والمعاملات","Details of worship and dealings"),1],[P("الأوامر والنواهي الجزئية","Specific commands and prohibitions"),1],[P("حِلّ الشحوم وتحريمها","Fats being lawful or forbidden"),1],
+ [P("المنهاج","The manhaj"),1],[P("الهدف: عبادة الله وحده","The goal: worship of Allah alone"),0]],P("تتفق في الأصول وتختلف في الفروع.","Agree in the roots, differ in the branches.")),
+C("S1-02",1,P("صنّف أجزاء صورة الحديث:","Sort the parts of the Hadith’s picture:"),[P("الرسالات السابقة","Earlier messages"),P("الرسالة الخاتمة","The final message"),P("موقف الناس","The people’s reaction")],[
+ [P("البيت الحسن الجميل","The excellent, beautiful house"),0],[P("موضع اللبنة الناقص","The missing brick’s place"),1],[P("الطواف حول البيت","Walking around the house"),2],
+ [P("«فأنا اللبنة»","“So I am the brick”"),1],[P("الإعجاب بالبناء","Marvelling at the building"),2],[P("البناء الذي أسهم فيه الأنبياء","The building the prophets contributed to"),0],
+ [P("«هلّا وضعت هذه اللبنة»","“If only this brick were placed”"),2],[P("«خاتم النبيين»","“Seal of the Prophets”"),1]],P("تصنيف رمزي لأجزاء المثل.","A symbolic sorting of the parable’s parts."),"hadith"),
+C("S1-03",1,P("صنّف: يوافق الإيمان بالرسل أم يخالفه؟","Sort: does this fit belief in the messengers or violate it?"),[P("يوافق","Fits"),P("يخالف","Violates")],[
+ [P("الإيمان بنوح وإبراهيم وموسى وعيسى ومحمد جميعًا","Believing in Nuh, Ibrahim, Musa, Isa and Muhammad together"),0],[P("الإيمان ببعض الرسل دون بعض","Believing in some messengers but not others"),1],
+ [P("دراسة سيرة الأنبياء والاقتداء بهم","Studying the prophets’ lives and following them"),0],[P("نسبة الباطل إلى الأنبياء وتركه","Attributing falsehood to prophets and leaving it"),1],
+ [P("الدفاع عن الأنبياء","Defending the prophets"),0],[P("التفريق بين رسول وآخر","Making a distinction between messengers"),1]],P("﴿لا نفرق بين أحد من رسله﴾.","“We make no distinction between any of His messengers.”")),
+C("S1-04",1,P("صنّف: رسالة محمد ﷺ أم الرسالات السابقة؟","Sort: Muhammad’s ﷺ message or the earlier messages?"),[P("رسالة محمد ﷺ","Muhammad’s ﷺ message"),P("الرسالات السابقة","Earlier messages")],[
+ [P("عامة لجميع البشر","Universal for all people"),0],[P("جاءت في مراحل نمو البشرية وكانت لأقوامها","Came in stages of humanity’s growth for their peoples"),1],
+ [P("خالدة لا رسالة بعدها","Eternal; none after it"),0],[P("لبّت حاجات الزمان الذي جاءت فيه","Met the needs of the time they came in"),1],
+ [P("شريعتها صالحة لكل زمان ومكان","Its law suits every time and place"),0],[P("اللبنات التي سبقت اللبنة الأخيرة","The bricks before the last brick"),1]],P("الخاتمة عامة خالدة، والسابقة مرحلية.","The final one is universal and eternal; earlier ones were stage-based.")),
+C("S2-01",2,P("صنّف: طاعة من يوسف أم حفظ من الله؟","Sort: Yusuf’s obedience or Allah’s protection of him?"),[P("طاعة يوسف","Yusuf’s obedience"),P("حفظ الله له","Allah’s protection")],[
+ [P("قال: معاذ الله","He said: Allah forbid"),0],[P("أراه الله برهانه وصرف عنه السوء","Allah showed him His proof and turned evil away"),1],[P("عفا عن إخوته","Forgave his brothers"),0],
+ [P("التقطه بعض السيارة من البئر","Travellers picked him from the well"),1],[P("دعا صاحبي السجن","Called his prison companions"),0],[P("اعتراف النسوة بعد ذلك ببراءته","The women’s later confession of his innocence"),1],
+ [P("التزم نصيحة أبيه","Kept his father’s advice"),0],[P("جعله على خزائن الأرض","Placed him over the treasuries"),1],[P("صبر على الأذى والسجن","Patient through harm and prison"),0],[P("أكرمت امرأة العزيز مثواه","The Aziz’s wife honoured his stay"),1]],
+ P("الطاعة فعل العبد، والحفظ فعل الله.","Obedience is the servant’s act; protection is Allah’s act.")),
+C("S2-02",2,P("صنّف الآيات: في أي سورة وردت؟","Sort the verses: in which surah do they occur?"),[P("يوسف","Yusuf"),P("المائدة","Al-Ma’idah"),P("سور أخرى","Other surahs")],[
+ [P("﴿لا تثريب عليكم اليوم﴾","“No blame upon you today”"),0],[P("﴿وأنزلنا إليك الكتاب بالحق﴾","“We revealed to you the Book in truth”"),1],[P("﴿اليوم أكملت لكم دينكم﴾","“Today I perfected for you your religion”"),1],
+ [P("﴿ولقد بعثنا في كل أمة رسولًا﴾","“We sent into every nation a messenger”"),2],[P("﴿معاذ الله إنه ربي أحسن مثواي﴾","“Allah forbid! He is my master who made my stay good”"),0],[P("﴿وخاتم النبيين﴾","“…and the Seal of the Prophets”"),2],
+ [P("﴿فاستبقوا الخيرات﴾","“So race to good deeds”"),1],[P("﴿إنا نحن نزلنا الذكر﴾","“It is We who sent down the Reminder”"),2],[P("﴿الآن حصحص الحق﴾","“Now the truth has become clear”"),0]],
+ P("سور الدروس: يوسف (٢) والمائدة (٣) وغيرها (١).","Surahs of the lessons: Yusuf (2), Al-Ma’idah (3), others (1).")),
+C("S2-03",2,P("صنّف الآيات بالقيمة (يعقوب ويوسف ﷺ):","Sort the verses by value (Ya‘qub and Yusuf ﷺ):"),[P("الصبر","Patience"),P("التوكل والثقة بالله","Reliance and trust in Allah"),P("الأمل والعفو","Hope and forgiveness")],[
+ [P("﴿فصبر جميل﴾","“So beautiful patience”"),0],[P("﴿إنه من يتق ويصبر…﴾","“Whoever fears Allah and is patient…”"),0],[P("﴿فالله خير حافظًا﴾","“Allah is the best guardian”"),1],
+ [P("﴿عليه توكلت﴾","“In Him I trust”"),1],[P("﴿ولا تيأسوا من روح الله﴾","“Do not despair of Allah’s mercy”"),2],[P("﴿لا تثريب عليكم اليوم يغفر الله لكم﴾","“No blame today; may Allah forgive you”"),2],
+ [P("﴿والله على ما نقول وكيل﴾","“Allah is Trustee over what we say”"),1]],P("نشاط الكتاب (استنتاج).","Textbook activity (deduced).")),
+C("S2-04",2,P("صنّف: هل هذا من قيم الأنبياء أم ضدها؟","Sort: is this a prophetic value or its opposite?"),[P("قيمة نبوية","Prophetic value"),P("ضد القيمة","Opposite of the value")],[
+ [P("العفو عند المقدرة","Pardon when able"),0],[P("الانتقام من المسيء","Taking revenge on the wrongdoer"),1],[P("الصبر والرضا","Patience and contentment"),0],[P("الجزع والتسخط","Panic and discontent"),1],
+ [P("المبادرة إلى خدمة الوطن","Taking the initiative to serve the homeland"),0],[P("التواكل والتخلف عن المسؤولية","Passivity and dodging responsibility"),1],[P("العفة وترك الفاحشة","Chastity and leaving immorality"),0],[P("الاستجابة للإغراء","Giving in to temptation"),1]],
+ P("القدوة العملية في الأخلاق.","The practical model in morals.")),
+C("S3-01",3,P("صنّف: استباق إلى الخيرات أم اتباع للهوى؟","Sort: racing to good deeds or following desire?"),[P("استباق للخيرات","Racing to good"),P("اتباع للهوى","Following desire")],[
+ [P("طاعة الله","Obeying Allah"),0],[P("ترك العبادة بعد معرفتها","Leaving worship after knowing it"),1],[P("الإيمان برسوله ﷺ","Believing in His Messenger ﷺ"),0],
+ [P("التذبذب في العقيدة بعد رسوخها","Wavering in belief after it was firm"),1],[P("التصديق بالقرآن","Confirming the Qur’an"),0],[P("التخلي عن الأخلاق الفاضلة","Abandoning virtuous morals"),1],
+ [P("اتباع الشريعة السمحة","Following the tolerant law"),0],[P("الافتتان بأقوال أهل الكتاب","Being tempted by the People of the Book’s words"),1],[P("فعل الخيرات في جميع ميادين الحياة","Doing good in all fields of life"),0],[P("الميل عن الحق","Inclining away from the truth"),1]],
+ P("قيمتان في الآيات.","Two values in the verses.")),
+C("S3-02",3,P("صنّف العبارة: صحيحة عن القرآن أم لا؟","Sort the statement: true of the Qur’an or not?"),[P("صحيح عن القرآن","True of the Qur’an"),P("ليس صحيحًا","Not true")],[
+ [P("مصدّق لما قبله من الكتب","Confirms earlier books"),0],[P("سيُغيَّر قبل يوم القيامة","Will be altered before Judgement Day"),1],[P("مهيمن على الكتب السابقة","Dominant over earlier books"),0],
+ [P("خاص بقوم دون قوم","For one people only"),1],[P("أشمل الكتب وأعظمها وأحكمها","Most comprehensive, greatest, most judicious"),0],[P("سيُستبدل بكتاب بعده","Will be replaced by a later book"),1],
+ [P("جمع محاسن الكتب السابقة وزاد عليها","Gathered earlier books’ virtues and added to them"),0],[P("باقٍ ومعتمد إلى يوم القيامة","Preserved and authoritative until Judgement Day"),0]],P("ميزتان: الأعظم، والباقي.","Two features: the greatest, and the preserved.")),
+C("S3-03",3,P("صنّف: ما تتفق فيه الكتب السماوية وما تختلف فيه","Sort: what the heavenly books share and where they differ"),[P("تتفق","Share"),P("تختلف","Differ")],[
+ [P("كلها من عند الله","All from Allah"),0],[P("بعض الأوامر والنواهي","Some commands and prohibitions"),1],[P("أنها هدى ونور وموعظة للمتقين","That they are guidance, light and admonition for the God-fearing"),0],
+ [P("أنها يصدّق بعضها بعضًا","That they confirm one another"),0],[P("الشيء المحرم في شريعة المباح في أخرى","What is forbidden in one law and lawful in another"),1],[P("تشديد حكم في شريعة وتخفيفه في أخرى","Making a ruling stricter in one law and lighter in another"),1]],
+ P("المحطة الثالثة: مكمن الاختلاف.","The third stop: where they differ.")),
+C("S0-01",0,P("صنّف كل معلومة بالدرس الذي تنتمي إليه:","Sort each fact by the lesson it belongs to:"),[P("الدرس ١","Lesson 1"),P("الدرس ٢","Lesson 2"),P("الدرس ٣","Lesson 3")],[
+ [P("حديث اللبنة","The brick Hadith"),0],[P("﴿معاذ الله﴾","“Allah forbid!”"),1],[P("مهيمنًا","Muhayminan"),2],[P("خاتم النبيين","Seal of the Prophets"),0],
+ [P("العفو عن الإخوة","Forgiving the brothers"),1],[P("شرعة ومنهاجًا","A law and a way"),2],[P("مميزات رسالة محمد ﷺ الثلاث","The three features of Muhammad’s ﷺ message"),0],
+ [P("حفظ الله من كيد الإخوة","Protection from the brothers’ plot"),1],[P("الاستباق إلى الخيرات","Racing to good deeds"),2],[P("أخوة الإيمان بالله","Brotherhood of faith in Allah"),0],[P("خزائن الأرض","The land’s storehouses"),1],[P("أفحكم الجاهلية يبغون","Is it the judgement of ignorance they seek"),2]],
+ P("تثبيت الدرس لكل معلومة.","Fix each fact to its lesson.")),
+);
 
 /* ================= PALETTE (dark only) ================= */
 const pal = {
@@ -314,7 +556,7 @@ const UI = {
   tapPart:P("المس الجزء الصحيح من الرسم","Tap the correct part of the picture"),
 };
 const TYPE_LABEL = {mcq:P("اختيار","Multiple choice"),multi:P("متعدد","Select all"),tf:P("صح/خطأ","True / False"),fill:P("أكمل","Fill in"),
-  order:P("رتّب","Put in order"),match:P("طابق","Match"),cat:P("صنّف","Sort"),short:P("بطاقة","Flashcard"),cmd:P("مصطلح","Command term"),diagram:P("رسم","Diagram")};
+  order:P("رتّب","Put in order"),match:P("طابق","Match"),cat:P("صنّف","Sort"),cmd:P("مصطلح","Command term"),diagram:P("رسم","Diagram")};
 
 /* ================= HELPERS ================= */
 const shuffle = arr => { const a=[...arr]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];} return a; };
@@ -323,9 +565,10 @@ const norm = s => String(s||"").normalize("NFKD").replace(/[ً-ٰٟۖ-ۭـ]/g,""
 const STORE_KEY = "aqeedah_quiz_v1";
 const loadStore = () => { try{ const s=JSON.parse(localStorage.getItem(STORE_KEY)||"null"); if(s&&s.best&&s.misses) return s; }catch(e){} return {best:{},misses:{},lang:"both"}; };
 const saveStore = s => { try{ localStorage.setItem(STORE_KEY, JSON.stringify(s)); }catch(e){} };
-function useKeys(handler){
+function useKeys(handler, capture=false){
   const ref = useRef(handler); ref.current = handler;
-  useEffect(()=>{ const h=e=>{ if(e.ctrlKey||e.metaKey||e.altKey) return; ref.current(e); }; window.addEventListener("keydown",h); return ()=>window.removeEventListener("keydown",h); },[]);
+  useEffect(()=>{ const h=e=>{ if(e.ctrlKey||e.metaKey||e.altKey) return; ref.current(e); };
+    window.addEventListener("keydown",h,capture); return ()=>window.removeEventListener("keydown",h,capture); },[]);
 }
 const btn = (extra={}) => ({fontFamily:FONT,fontSize:16,color:pal.ink,background:pal.card,border:`1px solid ${pal.cardBd}`,borderRadius:10,padding:"10px 14px",cursor:"pointer",textAlign:"start",lineHeight:1.45,...extra});
 
@@ -423,7 +666,7 @@ function Match({q,onGrade}){
       <div style={{display:"grid",gap:8}}>{right.map((j,k)=>{ const used=Object.values(m).includes(j);
         return <button key={j} onClick={()=>tapR(j)} style={btn({opacity:used&&!done?.55:1,borderColor:used?pal.mix:pal.cardBd})}><span style={{fontFamily:MONO,fontSize:12,color:pal.faint}}>{k+1} </span><T p={q.pairs[j][1]}/></button>;})}</div>
     </div>
-    {done && <div style={{marginTop:12,color:pal.answerInk}}>{q.pairs.map((p,i)=><div key={i} style={{padding:"3px 0"}}><span style={{color:pal.good}}>✓</span> <T p={p[0]}/> — <T p={p[1]}/></div>)}</div>}
+    {done && <div style={{marginTop:12,color:pal.answerInk}}><div style={{fontFamily:MONO,fontSize:12,color:pal.faint,marginBottom:4}}>{q.pairs.filter((_,i)=>m[i]===i).length} / {q.pairs.length}</div>{q.pairs.map((p,i)=><div key={i} style={{padding:"3px 0"}}><span style={{color:pal.good}}>✓</span> <T p={p[0]}/> — <T p={p[1]}/></div>)}</div>}
     {!done && <button onClick={check} disabled={Object.keys(m).length!==q.pairs.length} style={btn({marginTop:12,background:Object.keys(m).length===q.pairs.length?pal.mix:pal.track,color:"#16140F",fontWeight:700})}><T p={UI.check}/> ↵</button>}
   </div>);
 }
@@ -441,19 +684,6 @@ function Cat({q,onGrade}){
         {done && !ok && <div style={{marginTop:6,color:pal.good,fontSize:14}}>✓ <T p={q.cats[it.c]}/></div>}
       </div>;})}</div>
     {!done && <button onClick={check} disabled={Object.keys(a).length!==q.items.length} style={btn({marginTop:12,background:Object.keys(a).length===q.items.length?pal.mix:pal.track,color:"#16140F",fontWeight:700})}><T p={UI.check}/> ↵</button>}
-  </div>);
-}
-function Short({q,onGrade}){
-  const [shown,setShown]=useState(false); const [done,setDone]=useState(false);
-  const grade=ok=>{ if(done) return; setDone(true); onGrade(ok); };
-  useKeys(e=>{ if(!shown){ if(e.key==="Enter") setShown(true); } else if(!done){ if(e.key==="1") grade(true); if(e.key==="2") grade(false); } });
-  return (<div>
-    {!shown && <button onClick={()=>setShown(true)} style={btn({background:pal.mix,color:"#16140F",fontWeight:700})}><T p={UI.reveal}/> ↵</button>}
-    {shown && <div style={{background:pal.goodBg,border:`1px solid ${pal.goodBd}`,borderRadius:10,padding:"12px 14px",color:pal.answerInk,lineHeight:1.7}}>
-      <div style={{fontFamily:MONO,fontSize:12,color:pal.good,marginBottom:4}}><T p={UI.model}/></div><T p={q.ans}/></div>}
-    {shown && !done && <div style={{display:"flex",gap:10,marginTop:12}}>
-      <button onClick={()=>grade(true)} style={btn({flex:1,textAlign:"center",borderColor:pal.goodBd})}><span style={{fontFamily:MONO,fontSize:12,color:pal.faint}}>1 </span><T p={UI.knew}/></button>
-      <button onClick={()=>grade(false)} style={btn({flex:1,textAlign:"center",borderColor:pal.badBd})}><span style={{fontFamily:MONO,fontSize:12,color:pal.faint}}>2 </span><T p={UI.missed}/></button></div>}
   </div>);
 }
 function BrickDiagram({q,onGrade}){
@@ -489,7 +719,6 @@ function Body({q,onGrade}){
     case "order": return <Order q={q} onGrade={onGrade}/>;
     case "match": return <Match q={q} onGrade={onGrade}/>;
     case "cat": return <Cat q={q} onGrade={onGrade}/>;
-    case "short": return <Short q={q} onGrade={onGrade}/>;
     case "diagram": return <BrickDiagram q={q} onGrade={onGrade}/>;
     default: return null;
   }
@@ -513,7 +742,7 @@ function Runner({run, store, setStore, onExit}){
     setStore(s=>{ const m={...s.misses}; if(ok){ delete m[q.id]; } else { m[q.id]=(m[q.id]||0)+1; } const n={...s,misses:m}; saveStore(n); return n; });
   },[i,q,setStore]);
   const next = ()=>{ if(i+1>=run.qs.length){ finish([...results]); } else { setI(i+1); setGraded(null); } };
-  useKeys(e=>{ if(e.key==="Enter" && graded!==null && !finished){ next(); } });
+  useKeys(e=>{ if(e.key==="Enter" && graded!==null && !finished){ next(); } }, true); // capture: always runs before the question's own handler
   if(finished){
     const r = run.qs.map((_,k)=>results[k]===true); const n=r.filter(Boolean).length; const pct=Math.round(100*n/run.qs.length);
     const missed = run.qs.filter((_,k)=>results[k]!==true);
@@ -527,7 +756,6 @@ function Runner({run, store, setStore, onExit}){
         {missed.map(m=><div key={m.id} style={{background:pal.card,border:`1px solid ${pal.cardBd}`,borderRadius:10,padding:12,marginBottom:8}}>
           <div style={{marginBottom:6}}><T p={m.q}/></div>
           {m.w && <div style={{color:pal.soft,fontSize:15}}>↳ <T p={m.w}/></div>}
-          {m.t==="short" && <div style={{color:pal.answerInk,fontSize:15,marginTop:4}}><T p={m.ans}/></div>}
         </div>)}</div>}
       <div style={{display:"flex",gap:10,marginTop:14}}>
         <button onClick={onExit} style={btn({flex:1,textAlign:"center"})}><T p={UI.home}/></button>
@@ -567,6 +795,7 @@ function Home({store,onStart,onClear}){
     {key:"l1",label:P("الدرس ١: خاتم النبيين","Lesson 1: Seal of the Prophets"),col:pal.u1,qs:()=>shuffle(QS.filter(q=>q.l===1))},
     {key:"l2",label:P("الدرس ٢: قيم رسخها الأنبياء","Lesson 2: Values of the Prophets"),col:pal.u2,qs:()=>shuffle(QS.filter(q=>q.l===2))},
     {key:"l3",label:P("الدرس ٣: الرسالة الخاتمة","Lesson 3: The Final Message"),col:pal.u3,qs:()=>shuffle(QS.filter(q=>q.l===3))},
+    {key:"mc",label:P("مطابقة وتصنيف","Matching & sorting"),col:pal.mix,qs:()=>shuffle(QS.filter(q=>q.l>=0&&(q.t==="match"||q.t==="cat"))),desc:P("أسئلة كثيفة المعلومات","Dense, information-packed questions")},
     {key:"hadith",label:P("تدريب الحديث","Hadith drill"),col:pal.u1,qs:()=>shuffle(QS.filter(q=>q.tag==="hadith")),desc:P("حفظ نص الحديث ومعناه","Wording and meaning of the Hadith")},
     {key:"quick15",label:P("١٥ سؤالًا سريعة","Quick 15"),col:pal.mix,qs:()=>shuffle(QS.filter(q=>q.l>0)).slice(0,15)},
     {key:"weak",label:P("نقاط الضعف","Weak-spot drill"),col:pal.bad,qs:()=>shuffle(QS.filter(q=>misses.includes(q.id))),disabled:misses.length===0,desc:misses.length?null:UI.empty},
